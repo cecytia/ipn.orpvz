@@ -1,0 +1,60 @@
+.infografia {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.infografia .item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.infografia .item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.infografia .item h3 {
+    color: #800020;
+    margin-bottom: 10px;
+}
+
+.infografia .item h4 {
+    color: #800020;
+    margin-top: 15px;
+}
+
+.infografia .item img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.subtipo ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+    color: #333;
+}
+
+.subtipo li {
+    margin-bottom: 8px;
+}
+
+.descripcion {
+    margin-top: 20px;
+    font-size: 1.1em;
+    color: #333;
+    font-style: italic;
+}
+.texto {
+    font-size: 2.5em;
+    color: #800020; /* Guinda */
+    font-weight: bold;
+    margin-bottom: 20px;
+}

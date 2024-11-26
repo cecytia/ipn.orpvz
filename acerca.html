@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Conferencia</title>
+  <link rel="stylesheet" href="css/estilos.css" />
+  <link rel="stylesheet" href="css/usuario.css" />
+  <link rel="stylesheet" href="css/principal.css" />
+  <link rel="stylesheet" href="css/acerca.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="barra_lateral">
+    <div class="contenido_logo">
+      <div class="logo">
+        <img src="img/ipn.png" class="ipn" />
+        <div class="nombre_logo">Inteligencia Artificial</div>
+      </div>
+      <i class="bx bx-menu" id="btn"></i>
+    </div>
+    <ul class="lista_navegacion">
+      <li>
+        <i class="bx bx-search-alt-2"></i>
+        <input type="text" placeholder="Buscador..." />
+        <span class="tooltip">Buscador</span>
+      </li>
+      <li>
+        <a href="index.html">
+          <i class="bx bx-grid-alt"></i>
+          <span class="nombre_enlaces">Inicio</span>
+        </a>
+        <span class="tooltip">Inicio</span>
+      </li>
+      <li>
+        <a href="estadisticas.html">
+          <i class="bx bx-user"></i>
+          <span class="nombre_enlaces">Estadisticas</span>
+        </a>
+        <span class="tooltip">Estadisticas</span>
+      </li>
+      <li>
+        <a href="acerca.html">
+          <i class="bx bx-chat"></i>
+          <span class="nombre_enlaces">Que es?</span>
+        </a>
+        <span class="tooltip">Que es?</span>
+      </li>
+      <li>
+        <a href="tipos.html">
+          <i class="bx bx-pie-chart-alt-2"></i>
+          <span class="nombre_enlaces">Tipos de IA</span>
+        </a>
+        <span class="tooltip">Tipos de IA</span>
+      </li>
+      
+      <li>
+        <a href="IA.html">
+          <i class="bx bx-cog"></i>
+          <span class="nombre_enlaces">IAs</span>
+        </a>
+        <span class="tooltip">IAs</span>
+      </li>
+    </ul>
+    <div class="contenido_perfil">
+      <div class="perfil">
+        <div class="detalles_perfil">
+          <img src="img/ipn.png" alt="" class="blanco" />
+          <div class="nombre_trabajo">
+            <div class="nombre">Los más fríos</div>
+            <div class="trabajo">Diseñador Web</div>
+          </div>
+        </div>
+        <button onclick="location.href='#'">
+          <i class="bx bx-log-out" id="cerrar_sesion"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <section class="contenido_inicio">
+    <div class="texto">Qué es la Inteligencia Artificial</div>
+
+    <section class="ai-infografia">
+      <div class="ai-infografia-item">
+        <img src="img/img1.jpg" alt="Definición de IA" class="ai-infografia-img">
+        <h3 class="ai-infografia-title">¿Qué es la IA?</h3>
+        <p class="ai-infografia-text">La inteligencia artificial es un campo de la informática que crea sistemas capaces
+          de realizar tareas que normalmente requieren de inteligencia humana, como la toma de decisiones o el
+          reconocimiento de voz.</p>
+      </div>
+
+      <div class="ai-infografia-item">
+        <img src="img/LAIAAA.jpg" alt="Aplicaciones de la IA" class="ai-infografia-img">
+        <h3 class="ai-infografia-title">Aplicaciones en la Vida Real</h3>
+        <p class="ai-infografia-text">La IA está revolucionando sectores como la medicina, transporte y educación, desde
+          asistentes virtuales como Siri hasta vehículos autónomos que navegan sin intervención humana.</p>
+      </div>
+
+      <div class="ai-infografia-item">
+        <img src="img/xddddd.jpg" alt="Avances en la IA" class="ai-infografia-img">
+        <h3 class="ai-infografia-title">Avances Recientes</h3>
+        <p class="ai-infografia-text">Recientemente, los avances en el aprendizaje profundo y las redes neuronales han
+          permitido la creación de sistemas de IA capaces de reconocer patrones y generar contenido original.</p>
+      </div>
+    </section>
+  </section>
+
+  <script>
+    let btn = document.querySelector("#btn");
+    let barraLateral = document.querySelector(".barra_lateral");
+    let btnBuscar = document.querySelector(".bx-search-alt-2");
+
+    btn.onclick = function () {
+      barraLateral.classList.toggle("activa");
+    };
+    btnBuscar.onclick = function () {
+      barraLateral.classList.toggle("activa");
+    };
+  </script>
+</body>
+
+</html>

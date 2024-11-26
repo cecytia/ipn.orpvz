@@ -1,0 +1,199 @@
+
+.brutalist-button {
+    margin: 30px auto;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: 169px;
+    height: 60px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border: 3px solid #fff;
+    outline: 3px solid #000;
+    box-shadow: 6px 6px 0 #00a4ef;
+    transition: all 0.1s ease-out;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .brutalist-button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 130%;
+    height: 130%;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 255, 255, 0.8),
+      transparent
+    );
+    z-index: 1;
+    transition: none;
+    /* Initially hide the pseudo-element */
+    opacity: 0;
+  }
+  
+  @keyframes slide {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .brutalist-button:hover::before {
+    /* Show the pseudo-element on hover */
+    opacity: 1;
+    animation: slide 2s infinite;
+  }
+  
+  .brutalist-button:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 10px 10px 0 #ffd6d6;
+    background-color: #ffd6d6;
+    color: #000;
+  }
+  
+  @keyframes slide {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  .brutalist-button:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0 #00a4ef;
+    background-color: #fff;
+    color: #df8aab;
+    border-color: #df8aab;
+  }
+  
+  
+  .ms-logo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    width: 26px;
+    height: 26px;
+    margin-right: 8px;
+    flex-shrink: 0;
+    transition: transform 0.2s ease-out;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .brutalist-button:hover .ms-logo {
+    transform: rotate(-10deg) scale(1.1);
+  }
+  
+  .brutalist-button:active .ms-logo {
+    transform: rotate(10deg) scale(0.9);
+  }
+  
+  .ms-logo-square {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .button-text {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+    transition: transform 0.2s ease-out;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .brutalist-button:hover .button-text {
+    transform: skew(-5deg);
+  }
+  
+  .brutalist-button:active .button-text {
+    transform: skew(5deg);
+  }
+  
+  .button-text span:first-child {
+    font-size: 11px;
+    text-transform: uppercase;
+  }
+  
+  .button-text span:last-child {
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+  .mapa {
+    margin: 30px auto; /* Centra el mapa en ambos ejes */
+    width: 80%; /* Aumenta el tamaño del contenedor */
+    max-width: 800px; /* Limita el ancho máximo */
+    border: 5px solid #000; /* Mantiene el borde negro */
+    box-shadow: 6px 6px 0 #ffd6d6; /* Usa tu sombra original */
+    border-radius: 20px; /* Bordes más suaves */
+    transition: all 0.3s ease-in-out; /* Suaviza la animación */
+}
+
+.mapa iframe {
+    display: block;
+    width: 100%;
+    height: 400px; /* Tamaño proporcional */
+    border-radius: 15px; /* Coincide con el contenedor */
+    border: none; /* Elimina el borde del iframe */
+}
+
+.mapa:hover {
+    transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+    box-shadow: 10px 10px 0 #df8aab; /* Usa tu sombra al pasar el cursor */
+    border-color: #000; /* Mantiene el color del borde */
+}
+.hero-subtitle {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-top: 0.5rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+.bienvenida {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #7b113a;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 1200px;
+}
+
+.bienvenida-titulo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.bienvenida-descripcion {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  animation: fadeIn 1.5s ease-in-out;
+}
+/* Animaciones */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}

@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #11101d;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.7),
+    0 0 10px rgba(255, 255, 255, 0.7), 0 0 15px rgba(255, 255, 255, 0.7),
+    0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.hero {
+  background-image: url("D:/Conferencia/img/si.png");
+  background-size: cover;
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  color: white;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  color: #fff;
+  font-weight: bold;
+  margin-top: 10%;
+}
+
+.contenido_inicio {
+  max-width: 1100px;
+  margin: 40px;
+  padding: 20px;
+}
+
+.texto {
+  font-size: 2.5rem;
+  color: #11101d;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.ai-infografia {
+  padding-left: 12%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.ai-infografia-item {
+  flex-basis: 30%;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.ai-infografia-item:hover {
+  transform: scale(1.05);
+}
+
+.ai-infografia-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.ai-infografia-title {
+  font-size: 1.8rem;
+  color: #11101d;
+  margin-bottom: 10px;
+}
+
+.ai-infografia-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+footer {
+  background-color: #11101d;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  font-size: 1rem;
+}
